@@ -1,4 +1,5 @@
 import Image from "next/image";
+import DigitalTwin from "./components/digital-twin";
 
 const highlights = [
   { value: "650K+", label: "users supported through Auth0 flows" },
@@ -110,6 +111,7 @@ export default function Home() {
           <a href="#about">About</a>
           <a href="#journey">Journey</a>
           <a href="#portfolio">Portfolio</a>
+          <a href="#twin">Digital Twin</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
@@ -195,6 +197,23 @@ export default function Home() {
             <span>{item.detail}</span>
           </article>
         ))}
+      </section>
+
+      <section id="twin" className="section twin-section">
+        <div className="twin-intro">
+          <p className="section-label">Digital Twin</p>
+          <h2>Ask about the work behind the resume.</h2>
+          <p>
+            Explore Phong&apos;s engineering background, systems work, career
+            journey, and approach to building secure product experiences.
+          </p>
+          <div className="twin-notes" aria-label="Digital Twin focus areas">
+            <span>Career journey</span>
+            <span>Technical depth</span>
+            <span>Product mindset</span>
+          </div>
+        </div>
+        <DigitalTwin />
       </section>
 
       <section id="journey" className="section">
